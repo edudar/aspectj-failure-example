@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.aspectj:aspectjweaver:1.8.10'
+    compile 'org.aspectj:aspectjrt:1.8.10'
+    compile 'org.springframework.boot:spring-boot-starter-web:1.4.2.RELEASE'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
